@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nexa", sans-serif;
+}
+input:focus {
+  outline: none;
+  background: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  max-width: 1500px;
+  width: 100%;
+  height: 92vh;
+  border: 1px solid red;
+}
+.ratings {
+  height: 4.4 rem;
+  width: 4.4rem;
+}
+.logistics {
+  display: flex;
+}
+.logistics-profile {
+  border: 1px solid red;
+  height: 100%;
+  width: 23%;
+}
+.logistics-company {
+  border: 1px solid red;
+  height: 100%;
+  width: 35%;
+  padding: 1rem 1rem 0rem 1rem;
+  overflow: hidden;
+}
+.logistics-company-search {
+  padding: 0.4rem;
+  /* margin: 2rem; */
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-bottom: 2rem;
+  width: 80%;
+  margin: 0 auto 1rem;
+}
+.logistics-company-search input {
+  height: 1.5rem;
+  width: 80%;
+  border: none;
+}
+.logistics-company-container {
+  width: 100%;
+  height: 82vh;
+  background-color: rgba(124, 209, 124, 0.603);
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+.logistics-company-container-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.logistics-company-container-box-profile {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 2px solid orange;
+  margin-right: 1rem;
+}
+.logistics-company-container-box-profile img {
+  border-radius: 50%;
+}
+.logistics-company-container-box-name h3 {
+  font-size: 16px;
+  color: grey;
+}
+.logistics-company-container-box-name p {
+  color: green;
+  font-weight: 600;
+  font-size: 15px;
+}
+.logistics-company-container-box-name span {
+  font-weight: 700;
+  font-size: 14px;
+}
+.bxs-circle {
+  /* font-size: 2rem; */
+  color: red;
+  position: absolute;
+  right: 3rem;
+}
+.bx-chevron-right {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 800;
+  right: 1rem;
+}
+.bx-chevron-left {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 800;
+  right: 1rem;
+}
+.green {
+  color: green;
+}
+.logistics-information {
+  border: 1px solid red;
+  width: 42%;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.logistics-information-profile {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  margin-bottom: 1rem;
+}
+.logistics-information-profile-img {
+  height: 6.5rem;
+  width: 6.5rem;
+  border: 5px solid white;
+  box-shadow: 0 0 0.4rem #00000085;
+  margin-right: 2rem;
+}
+.logistics-information-profile-name h1 {
+  font-weight: 1000;
+  font-size: 24px;
+  color: green;
+}
+.logistics-information-profile-name p {
+  font-weight: 600;
+  color: grey;
+  /* font-size: 8px; */
+}
+.logistics-information-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: grey;
+  line-height: 1.3;
+}
+.logistics-information-option {
+  display: flex;
+  width: 70%;
+  border: 1px solid red;
+}
+.logistics-information-option button:nth-child(1) {
+  width: 50%;
+  height: 2rem;
+  border-radius: 10px 0 0 0;
+  border: none;
+  background-color: rgb(33, 148, 33);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.logistics-information-option button:nth-child(2) {
+  width: 50%;
+  height: 2rem;
+  border-radius: 0 10px 0 0;
+  border: none;
+  color: grey;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.logistics-information-timestamp {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 2%;
+}
+.logistics-information-timestamp p {
+  color: green;
+  font-weight: 700;
+}
+.logistics-information-timestamp p span {
+  height: 3rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: grey;
+}
+.logistics-information-timestamp p span:nth-child(1) {
+  width: 4rem;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+.logistics-information-timestamp input {
+  height: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 0.3rem;
+}
+.logistics-information-selection-label {
+  color: green;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+.logistics-information-selection {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+}
+.logistics-information-selection button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  background-color: rgb(124, 209, 124);
+  color: white;
+}
+.logistics-information-selection button:hover {
+  background-color: rgb(2, 184, 2);
+}
+.logistics-information-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 0.9rem;
+}
+.logistics-information-form-input {
+  border: 1px solid grey;
+  height: 2.8rem;
+  padding: 0.5rem;
+  margin-bottom: 2.2%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  font-weight: 600;
+  color: grey;
+}
+.logistics-information-form-input:nth-child(1) {
+  position: relative;
+}
+.logistics-information-form-input:nth-child(4) p {
+  /* justify-content: center; */
+  margin-left: 3rem;
+}
+
+.logistics-information-form-input-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 1.8rem;
+}
+.bx-chevron-down {
+  position: absolute;
+  right: 1rem;
+  font-size: 2rem;
+  color: grey;
+}
+.bxs-location-plus {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+.logistics-information-form-input-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: green;
+  padding: 0 2rem;
+}
+.logistics-information-text2 {
+  font-size: 11px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0.4rem;
+}
+.logistics-information-btn {
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: orange;
+  width: 70%;
+  height: 3rem;
+}
