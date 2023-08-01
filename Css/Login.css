@@ -20,7 +20,7 @@ body {
   /* padding: auto; */
 }
 section {
-  max-width: 1500px;
+  /* max-width: 1500px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@ section {
   height: 100%;
   width: 50%;
   padding: 0 3% 0 12%;
-  overflow: hidden;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 .login-form-logo {
