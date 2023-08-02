@@ -111,8 +111,9 @@ img {
   width: 100%;
   /* height: 100%; */
   height: 60vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: rgba(94, 196, 94, 0.616);
+  overflow-y: auto;
 }
 .cart-container-header {
   display: flex;
@@ -124,6 +125,9 @@ img {
   padding: 0 1rem;
   font-weight: 600;
   border-radius: 2px 2px 0 0;
+  position: sticky;
+  z-index: 500;
+  /* margin-top: 1rem; */
   /* justify-content: space-between; */
 }
 .cart-container-header p {
@@ -140,12 +144,16 @@ img {
 }
 .cart-container-item {
   display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
   padding: 0.5rem 0.5rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.753);
 }
 .cart-container-item-img {
-  width: 5.5rem;
-  height: 6.5rem;
-  border: 1px solid red;
+  width: 5rem;
+  height: 6rem;
+  /* border: 1px solid red; */
   background: url("../Img/pexels-rajesh-tp-1633578\ 1.png");
   background-position: center;
   background-size: cover;
@@ -163,17 +171,77 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 12rem;
 }
 .cart-container-item-quantity .bx {
   background-color: orange;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   border-radius: 5px;
   border: 0.5px solid grey;
   /* padding: 0; */
 }
+
 .cart-container-item-quantity p {
   margin: 0.5rem;
+}
+.cart-container-item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 7rem;
+}
+.cart-container-item-price h3 {
+  font-size: 13px;
+}
+.cart-container-item-price p {
+  font-size: 10px;
+}
+.cart-container-item-action {
+  width: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1.5rem;
+}
+.cart-container-item-action .bx {
+  font-size: 1.2rem;
+}
+.cart-container-item-action h3 {
+  font-size: 13px;
+}
+.cart-subtotal {
+  width: 100%;
+  /* border-top: 1px solid white; */
+  position: relative;
+  height: 17vh;
+  padding: 1rem;
+  background-color: rgba(94, 196, 94, 0.616);
+}
+.cart-subtotal-text {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-subtotal-btn {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+.cart-subtotal-btn button {
+  height: 2.5rem;
+  width: 30%;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-right: 1rem;
 }
 .order {
   /* width: 33%; */
