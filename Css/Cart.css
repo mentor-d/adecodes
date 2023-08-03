@@ -35,6 +35,7 @@ img {
 .body {
   display: flex;
   height: 92vh;
+  width: 100%;
 }
 .profile {
   width: 25%;
@@ -74,7 +75,7 @@ img {
   width: 100%;
   height: 67vh;
   /* height: 100%; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 1rem;
   font-weight: 600;
 }
@@ -105,7 +106,7 @@ img {
 .cart {
   width: 43%;
   height: 85vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-right: 1rem;
 }
 .cart-heading {
@@ -249,18 +250,20 @@ img {
   margin-right: 1rem;
 }
 .order {
-  width: 33%;
+  position: relative;
+  width: 29%;
   /* height: 100%; */
   height: 85vh;
-  border: 1px solid red;
-  /* padding-top: 4rem; */
+  /* display: none; */
+  /* border: 1px solid red; */
+  padding-top: 4rem;
 }
 .order-container {
   padding: 0.7rem 0.7rem 0rem 0.7rem;
   background-color: rgba(94, 196, 94, 0.616);
-  height: 55vh;
+  height: 62vh;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .order-container-heading {
   display: flex;
@@ -337,7 +340,36 @@ img {
 }
 
 .order-container-shipping {
-  margin-top: 0.7rem;
+  margin-top: 0.2rem;
   display: flex;
   justify-content: space-between;
+}
+.order-container-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+}
+.order-container-btn {
+  height: 3rem;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  margin-top: 0.7rem;
+  border-radius: 4px;
+  background-color: orange;
+}
+.order-btn {
+  position: absolute;
+  height: 3rem;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  margin-top: 0.7rem;
+  border-radius: 4px;
+  background-color: rgb(35, 126, 35);
+  bottom: 1rem;
 }
