@@ -15,6 +15,7 @@
     <section class="container">
       <div class="header">
         <i class="bx bx-menu"></i>
+        <i class="bx bx-x"></i>
         <img class="header-img" src="../Img/farmylogo.png" />
         <div class="header-notification">
           <i class="bx bx-bell"></i>
@@ -391,6 +392,26 @@
           </div>
         </div>
       </div>
+      <script>
+        const farmersProfile = document.querySelector(".farmers-profile");
+        const farmersProductContainer = document.querySelector(
+          ".farmers-product-container"
+        );
+        const menuCloser = document.querySelector(".bx-x");
+        const menuToggler = document.querySelector(".bx-menu");
+        menuToggler.addEventListener("click", function () {
+          farmersProfile.style.display = "block";
+          farmersProductContainer.style.display = "none";
+          menuCloser.style.display = "block";
+          menuToggler.style.display = "none";
+        });
+        menuCloser.addEventListener("click", function () {
+          farmersProfile.style.display = "none";
+          farmersProductContainer.style.display = "flex";
+          menuCloser.style.display = "none";
+          menuToggler.style.display = "block";
+        });
+      </script>
     </section>
   </body>
 </html>
