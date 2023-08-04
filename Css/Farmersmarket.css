@@ -21,14 +21,23 @@ a {
 .header {
   width: 100%;
   height: 9vh;
-  background-color: grey;
+  background-color: white;
+}
+.header .bx {
+  display: none;
+}
+.header h6 {
+  display: none;
 }
 .body {
   display: flex;
   width: 100%;
   height: 91vh;
   border: 1px solid red;
-  padding: 0rem 1rem;
+  padding-left: 1rem;
+}
+.nav {
+  display: none;
 }
 .farmers-profile {
   height: 100%;
@@ -43,6 +52,7 @@ a {
   border: 1px solid red;
   background-size: cover;
   background-image: url("../Img/pexels-pixabay-264636.jpg");
+  border-radius: 10px 10px 0 0;
 }
 
 .farmers-profile-photo {
@@ -67,7 +77,7 @@ a {
 .farmers-profile-name p {
   color: grey;
 }
-.farmers-profile-menu {
+.farmers-profile-box-menu {
   margin-top: 1rem;
   border-bottom: 1px solid grey;
   height: 3rem;
@@ -76,25 +86,249 @@ a {
   align-items: center;
   color: rgb(11, 73, 11);
 }
-.farmers-profile-menu .bx {
+.farmers-profile-box-menu .bx {
   font-size: 2rem;
   color: grey;
 }
+.farmers-profile-box-menu:nth-child(4) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(5) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(6) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(7) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(8) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(9) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(10) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(11) {
+  display: none;
+}
+.farmers-profile-box-menu:nth-child(12) {
+  display: none;
+}
 .farmers-product-container {
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 1rem; */
+  justify-content: space-between;
   height: 100%;
-  width: 75%;
+  width: 76%;
   border: 1px solid red;
-  padding: 2rem;
+  padding: 2rem 0rem;
+  align-items: flex-start;
 }
 .farmers-product-container-box {
-  height: 16rem;
-  width: 13rem;
+  margin-top: 1rem;
+  height: 17rem;
+  width: 12rem;
   border-radius: 10px;
-  border: 1px solid red;
+  border: 0.9px solid grey;
   padding: 0.5rem 1rem;
+  background-color: white;
 }
 .farmers-product-container-box-img {
   height: 7rem;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+.farmers-product-container-box h5 {
+  margin-top: 0.5rem;
+}
+.ratings {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* height: 1rem; */
+  width: 4rem;
+  margin: 0;
+}
+.ratings p {
+  font-size: 10px;
+  font-weight: 600;
+}
+.farmers-product-container-box-price {
+  display: flex;
+  align-items: center;
+}
+.farmers-product-container-box-price p {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 0.2rem;
+}
+.farmers-product-container-box-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.farmers-product-container-box-btn div:nth-child(1) {
+  background-color: green;
+}
+.farmers-product-container-box-btn div:nth-child(2) {
+  background-color: red;
+}
+.farmers-product-container-box-btn div {
+  /* border: 1px solid red; */
+  /* height: 3rem; */
+  width: 4.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.farmers-product-container-box-btn div .bx {
+  font-size: 2rem;
+  color: white;
+}
+/* Tablet Landscape */
+@media (max-width: 75em) {
+  .container {
+    border: 1px solid blue;
+  }
+}
+/* Tablet portrait */
+@media (max-width: 56.25em) {
+  .container {
+    border: 1px solid brown;
+  }
+  .farmers-profile {
+    width: 35%;
+  }
+  .farmers-product-container {
+    width: 63%;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .farmers-product-container-box {
+    margin-top: 0rem;
+  }
+}
+/* Tablet portrait2 */
+@media (max-width: 40.25em) {
+  .container {
+    border: 1px solid cyan;
+  }
+}
+/* phone portrait */
+@media (max-width: 28.125em) {
+  .container {
+    border: 1px solid blue;
+    position: relative;
+  }
+  .body {
+    padding: 0rem 0rem;
+  }
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0rem 5%;
+  }
+  .header .bx {
+    display: block;
+    font-size: 1.7rem;
+  }
+  .header h6 {
+    display: block;
+  }
+  .header-img {
+    height: 3rem;
+    /* width: 50%; */
+    width: 40vw;
+    border: 1px solid red;
+  }
+  .header-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .farmers-profile {
+    width: 100%;
+    margin: 0;
+  }
+  .farmers-profile-cover {
+    height: 9rem;
+  }
+  .farmers-profile-photo {
+    height: 6rem;
+    width: 6rem;
+  }
+  .farmers-profile-name h3 {
+    font-size: 16px;
+  }
+  .farmers-profile-box-menu {
+    height: 1.5rem;
+    justify-content: left;
+  }
+  .farmers-profile-box-menu .bx {
+    margin-right: 0.5rem;
+  }
+  .farmers-profile-box-menu:nth-child(1) {
+    display: none;
+  }
+  .farmers-profile-box-menu:nth-child(2) {
+    display: none;
+  }
+  .farmers-profile-box-menu:nth-child(3) {
+    display: none;
+  }
+  .farmers-profile-box-menu:nth-child(4) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(5) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(6) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(7) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(8) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(9) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(10) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(11) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(12) {
+    display: flex;
+  }
+  .farmers-profile-box-menu:nth-child(13) {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    position: absolute;
+    bottom: 0rem;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .farmers-product-container {
+    display: none;
+  }
 }
