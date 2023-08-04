@@ -134,9 +134,9 @@ a {
   height: 17rem;
   width: 12rem;
   border-radius: 10px;
-  border: 0.9px solid grey;
   padding: 0.5rem 1rem;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .farmers-product-container-box-img {
   height: 7rem;
@@ -255,6 +255,7 @@ a {
     align-items: center;
   }
   .farmers-profile {
+    display: none;
     width: 100%;
     margin: 0;
   }
@@ -329,6 +330,12 @@ a {
   }
 
   .farmers-product-container {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.2rem 0.3rem;
   }
 }
