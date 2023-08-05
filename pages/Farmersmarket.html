@@ -392,26 +392,52 @@
           </div>
         </div>
       </div>
-      <script>
+      <!-- <script>
         const farmersProfile = document.querySelector(".farmers-profile");
         const farmersProductContainer = document.querySelector(
           ".farmers-product-container"
         );
         const menuCloser = document.querySelector(".bx-x");
         const menuToggler = document.querySelector(".bx-menu");
-        menuToggler.addEventListener("click", function () {
-          farmersProfile.style.display = "block";
-          farmersProductContainer.style.display = "none";
-          menuCloser.style.display = "block";
-          menuToggler.style.display = "none";
-        });
-        menuCloser.addEventListener("click", function () {
-          farmersProfile.style.display = "none";
-          farmersProductContainer.style.display = "flex";
-          menuCloser.style.display = "none";
-          menuToggler.style.display = "block";
-        });
-      </script>
+
+        function open() {
+          var x = window.matchMedia("(max-width: 28.125em)");
+
+          if (x.matches) {
+            farmersProfile.style.display = "block";
+            farmersProductContainer.style.display = "none";
+            menuCloser.style.display = "block";
+            menuToggler.style.display = "none";
+          } else {
+            farmersProductContainer.reset();
+            farmersProfile.reset();
+            menuToggler.reset();
+            menuCloser.reset();
+          }
+        }
+        function close() {
+          var x = window.matchMedia("(max-width: 28.125em)");
+          if (x.matches) {
+            farmersProfile.style.display = "none";
+            farmersProductContainer.style.display = "flex";
+            menuCloser.style.display = "none";
+            menuToggler.style.display = "block";
+          } else {
+            farmersProductContainer.reset();
+            farmersProfile.reset();
+            menuToggler.reset();
+            menuCloser.reset();
+          }
+        }
+        function remove() {
+          var x = window.matchMedia("(max-width: auto)");
+          x.matches;
+        }
+        menuToggler.addEventListener("click", open);
+        menuCloser.addEventListener("click", close);
+        menuToggler.removeEventListener("rest", remove());
+        menuCloser.removeEventListener("change", remove());
+      </script> -->
     </section>
   </body>
 </html>
