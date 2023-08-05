@@ -54,8 +54,12 @@ a {
 .farm-nav-left-icons {
   display: flex;
   flex-direction: column;
-  height: 10rem;
+  height: 19rem;
   justify-content: space-between;
+}
+.farm-nav-left-icons .bx {
+  font-size: 1.5rem;
+  color: rgb(10, 148, 10);
 }
 .farm-list-container {
   overflow-y: auto;
